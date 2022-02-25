@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #hov:hover
+    {
+        box-shadow: 2px 2px 1px;
+    }
+    #hov
+    {
+        height: 30px;
+    }
+    #frm
+    {
+        background-color: beige;
+        padding: 60px;
+        text-align: center;
+        width:150px;
+        
+        margin-left: 40%;
+        border-radius: 20px;
+        padding-bottom: 90px;
+    }
+    #heading
+    {
+        text-align: center;
+    }
+    #result
+    {
+        border-radius: 20px;
+        padding: 10px;
+        margin-left: -15px;
+    }
+    #num
+    {
+        font-size:30px;
+    }
+
+</style>
+</head>
+<body>
+    <div id="heading">
+<h1> CALCULATOR</h1>
+    </div>
+    <div id="frm">
+    <form>
+        <input type="text" id="result" >
+        <br>
+        <br>
+        <div id="num" >
+        <input type="button" value="7" onclick="result.value+= 7" id="hov">
+        <input type="button" value="8" onclick="result.value+= 8" id="hov">
+        <input type="button" value="9" onclick="result.value+= 9" id="hov">
+        
+        <br>
+        <input type="button" value="4" onclick="result.value+= 4" id="hov">
+        <input type="button" value="5" onclick="result.value+= 5" id="hov">
+        <input type="button" value="6" onclick="result.value+= 6" id="hov">
+        
+        <br>
+        <input type="button" value="1" onclick="result.value+= 1" id="hov">
+        <input type="button" value="2" onclick="result.value+= 2" id="hov">
+        <input type="button" value="3" onclick="result.value+= 3" id="hov">
+        <br>
+        
+        <input type="button" value="+" onclick="result.value+= '+'">
+        <input type="button" value="*" onclick="result.value+= '*'" >
+        <input type="button" value="-" onclick="result.value+= '-'">
+        <br>
+        <input type="button" value="." onclick="result.value+= '.'">
+        <input type="button" value="/" onclick="result.value+= '/'">
+        <input type="button" value="=" onclick="result.value=eval(result.value)">
+    
+     <br>
+        <input type="button" value="clear" onclick="result.value= ' '">
+    </div>
+    </form>
+</div>
+</body>
+</html>
